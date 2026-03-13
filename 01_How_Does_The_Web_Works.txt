@@ -1,0 +1,53 @@
+Let's explore the very first most common topic when we start to learn about web development - How does the web works actually?
+
+to understand how web works we will explore step by step process from the moment we type a URL into a browser (which is one type of client which makes reqest to the server, that's why we call browser sometimes as a client) to server's response.
+
+Step-1: we enter a url into a browser like
+    -> "https://www.youtube.com" or "https://www.google.com/"
+    -> URL stands for "Uniform Resourse Locator" which contains
+        -> Protocol - either http or https (just secure version of http)
+        -> Domain Name - google.com or youtube.com like in above example
+        -> Path - path of specific resource on a website like youtube.com/about
+
+Step-2: DNS Resolve Domain name into an IP Address because Computers communicate using IP addresses, not domain names.
+    -> youtube.com (domain name) - 199.223.232.123 (IP Address of youtube.com)
+    -> To find this IP, the browser queries the Domain Name System (DNS).
+    -> Think of DNS as the internet's phonebook.
+    -> and finally DNS server sends IP Address of server to browser.
+
+Step-3: Browser Establishes a Connection
+    -> After Receiving IP Address from DNS server browser knows where the server is located.
+    -> It creates a TCP connection to the server.
+    -> Protocols involved: 
+        TCP – reliable data transmission
+        TLS – encryption (used in HTTPS)
+
+Step-4: Browser Sends an HTTP Request
+    -> Once connected, the browser sends a request like:
+        GET / HTTP/1.1
+        Host: example.com
+        User-Agent: Chrome
+        Accept: text/html
+    -> Common HTTP methods:
+        GET - Retrieve Data
+        POST - Send Data
+        PUT - Update Data
+        DELETE - Remove Data
+
+Step-5: Request Reaches the Web Server
+    -> The request reaches a web server such as NGINX, Apache HTTP Server, Nodejs
+    -> Server may return static files (HTML/CSS/JS), Run Backend Code, Query a database
+    -> Backend Flow:
+        Browser Request -> Web Server -> Backend Application -> Database -> Response Generated
+
+Step-6: Server Sends an HTTP Response
+    -> The server replies with something like:
+        HTTP/1.1 200 OK
+        Content-Type: text/html
+    -> Common Server Response codes:
+        200 - Success
+        301 - Redirect
+        404 - Not Found
+        500 - Server Error
+
+And Final Web Page will be displayed.
