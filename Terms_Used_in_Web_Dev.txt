@@ -1,0 +1,18 @@
+1. Browser - an Application software that serves websites on the internet
+2. URL - Uniform Resourse Locator
+3. http/https - Hypertext Transfer Protocol
+4. WWW - World Wide Web
+5. Client - who sends reqest to the server like browsers, api client tool like postman etc...
+6. Server - a simple computer machine who response to the client's request
+7. IP - Internet Protocol
+8. DNS - Domain Name System
+9. Domain - Human Readable Name of the website instead of IP Address.
+10. Reqest and Response - ?
+11. Request Methods - HTTP Req methods are GET,POST,PUT,DELETE
+12. Status Code - 3 digit code that server sends to browser
+13. HTML - Hypertext Markup Language to structure a webpage.
+14. CSS - stands for Casecading Style Sheet used for styling HTML
+15. JavaScript - A Web Primary Language to Implement Logic in a website either frontend or Backend (using frameworks and libraries like node/express)
+16. Protocols - set of defined rules to follow standardized approach
+17. Stateless - In networking, stateless refers to a communication protocol or system that treats each request as an independent transaction, requiring no knowledge of previous interactions
+18. 
